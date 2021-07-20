@@ -14,3 +14,19 @@ folder named `simplesamlphp`. Then run `docker-compose up -d`. The
 browser to https access. Then point your browser at
 https://sp1.tutorial.stack-dev.cirrusidentity.com or
 https://sp2.tutorial.stack-dev.cirrusidentity.com to start testing.
+
+# Usage
+
+```bash
+#clone this repo
+git clone https://github.com/yaleman/docker-simplesamlphp
+cd docker-simplesamlphp
+# clone simplesamlphp
+git clone https://github.com/simplesamlphp/simplesamlphp
+cd simplesamlphp
+# grab the version you want to test
+git switch -c simplesamlphp-1.18
+# start it up
+cd ..
+docker-compose up --build
+```
